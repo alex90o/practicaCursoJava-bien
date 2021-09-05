@@ -1,4 +1,5 @@
 package nota;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Principal {
@@ -36,6 +37,12 @@ public class Principal {
 		
 		System.out.println("El alunos que tuvo la mayor nota fue "+ vectorNombre[posMayor]+" con un puntaje de "+ vectorNotas[posMayor] );
 		System.out.println("El alunos que tuvo la menor nota fue "+ vectorNombre[posMenor]+" con un puntaje de "+ vectorNotas[posMenor] );
+		
+		// Arreglos antes de ordenar
+				System.out.println("Notas antes de ordenar:");
+				System.out.println(Arrays.toString(vectorNotas));
+				System.out.println(Arrays.toString(vectorNombre));
+		
 
 	}
 
