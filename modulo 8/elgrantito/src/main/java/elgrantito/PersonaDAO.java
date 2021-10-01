@@ -17,4 +17,18 @@ public class PersonaDAO {
 		
 		
 	}
+	
+	public static void modifica(Pesona per) throws Exception{
+		Connection co = Conexion.obtConexion();
+		String sql = "update personas set nombre = '"+ per.getNombre()+
+				"' ,apellido = '" + per.getApellido()+ "' ,edad =  '"+per.getEdad()+
+				"' where idperosnas = '"+ per.getIdpersona()+"'";
+		java.sql.Statement stm = co.createStatement();
+		stm.execute(sql);
+		stm.close();
+		co.close();
+		
+		
+	}
+	
 }

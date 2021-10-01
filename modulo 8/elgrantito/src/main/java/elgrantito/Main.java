@@ -14,9 +14,17 @@ public class Main {
 			System.out.println("Si se conecto a la Base");
 		}
 		*/
+		
+		/*
+		//insertar persona
 		Pesona tito = new Pesona("Nicolas","De la Cluz", 24);
 		PersonaDAO.insertar(tito);
+		*/
 		
+		//modifica persona
+		Pesona tito = new Pesona("Enzo","Perez", 31);
+		tito.setIdpersona(3);
+		PersonaDAO.modifica(tito);
 		
 	}
 
