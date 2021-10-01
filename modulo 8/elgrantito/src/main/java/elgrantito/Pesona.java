@@ -16,6 +16,11 @@ public Pesona(int idpersona, String nombre, String apellido, int edad) {
 	this.apellido = apellido;
 	this.edad = edad;
 }
+public Pesona(String nombre, String apellido, int edad) {
+	setNombre(nombre);
+	setApellido(apellido);
+	setEdad(edad);
+}
 public int getIdpersona() {
 	return idpersona;
 }
