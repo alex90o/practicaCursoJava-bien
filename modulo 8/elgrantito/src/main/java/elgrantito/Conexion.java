@@ -3,13 +3,13 @@ package elgrantito;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-import com.mysql.cj.jdbc.Driver;
+
 
 public class Conexion {
 public static Connection obtConexion() throws Exception{
 	//nombre de driver
 	//String dbDriver = "com.mysql.jdbc.Driver";
-	String dbDriver = "com.mysql.cj.jdbc.Driver";
+	String dbDriver = "org.mariadb.jdbc.Driver";
 	//para establecer la url y la base de datos
 	String dbUrlyBase = "jdbc:mysql://localhost/cafetito";
 	//usario por lo general root
