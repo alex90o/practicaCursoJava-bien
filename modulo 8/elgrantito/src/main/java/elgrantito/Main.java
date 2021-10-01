@@ -28,7 +28,12 @@ public class Main {
 		PersonaDAO.modifica(tito);
 		*/
 		//elimina perosna
-		PersonaDAO.elimina(3);
+		//PersonaDAO.elimina(3);
+		
+		//devolver una persona de la base de datos
+		Pesona p = PersonaDAO.getPersona(1);
+		System.out.println(p.toString());
+		
 		
 	}
 
