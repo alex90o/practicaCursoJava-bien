@@ -21,10 +21,14 @@ public class Main {
 		PersonaDAO.insertar(tito);
 		*/
 		
+		/*
 		//modifica persona
 		Pesona tito = new Pesona("Enzo","Perez", 31);
 		tito.setIdpersona(3);
 		PersonaDAO.modifica(tito);
+		*/
+		//elimina perosna
+		PersonaDAO.elimina(3);
 		
 	}
 

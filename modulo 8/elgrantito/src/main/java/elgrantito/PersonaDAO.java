@@ -30,5 +30,15 @@ public class PersonaDAO {
 		
 		
 	}
+	public static void elimina(int id) throws Exception{
+		Connection co = Conexion.obtConexion();
+		String sql = "delete from personas where idperosnas = "+id;
+		java.sql.Statement stm = co.createStatement();
+		stm.execute(sql);
+		stm.close();
+		co.close();
+		
+		
+	}
 	
 }
