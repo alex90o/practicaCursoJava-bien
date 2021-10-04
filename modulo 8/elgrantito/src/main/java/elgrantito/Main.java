@@ -17,13 +17,13 @@ public class Main {
 		
 		/*
 		//insertar persona
-		Pesona tito = new Pesona("Nicolas","De la Cluz", 24);
+		Persona tito = new Persona("Nicolas","De la Cluz", 24);
 		PersonaDAO.insertar(tito);
 		*/
 		
 		/*
 		//modifica persona
-		Pesona tito = new Pesona("Enzo","Perez", 31);
+		Persona tito = new Persona("Enzo","Perez", 31);
 		tito.setIdpersona(3);
 		PersonaDAO.modifica(tito);
 		*/
@@ -31,8 +31,8 @@ public class Main {
 		//PersonaDAO.elimina(3);
 		
 		//devolver una persona de la base de datos
-		Pesona p = PersonaDAO.getPersona(1);
-		System.out.println(p.toString());
+		//Persona p = PersonaDAO.getPersona(1);
+		//System.out.println(p.toString());
 		
 		
 	}

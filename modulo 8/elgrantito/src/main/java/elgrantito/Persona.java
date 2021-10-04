@@ -1,22 +1,22 @@
 package elgrantito;
 
-public class Pesona {
+public class Persona {
 private int idpersona;
 private String nombre;
 private String apellido;
 private int edad;
 
-public Pesona() {
+public Persona() {
 	
 }
-public Pesona(int idpersona, String nombre, String apellido, int edad) {
+public Persona(int idpersona, String nombre, String apellido, int edad) {
 	
 	this.idpersona = idpersona;
 	this.nombre = nombre;
 	this.apellido = apellido;
 	this.edad = edad;
 }
-public Pesona(String nombre, String apellido, int edad) {
+public Persona(String nombre, String apellido, int edad) {
 	setNombre(nombre);
 	setApellido(apellido);
 	setEdad(edad);

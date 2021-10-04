@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 
 public class PersonaDAO {
 
-	public static void insertar(Pesona per) throws Exception{
+	public static void insertar(Persona per) throws Exception{
 		Connection co = Conexion.obtConexion();
 		String sql = "insert into personas (nombre, apellido, edad)"
 				+ "value ('"+per.getNombre()+"', '"+per.getApellido()+ "', "+
@@ -19,7 +19,7 @@ public class PersonaDAO {
 		
 	}
 	
-	public static void modifica(Pesona per) throws Exception{
+	public static void modifica(Persona per) throws Exception{
 		Connection co = Conexion.obtConexion();
 		String sql = "update personas set nombre = '"+ per.getNombre()+
 				"' ,apellido = '" + per.getApellido()+ "' ,edad =  '"+per.getEdad()+
@@ -42,12 +42,12 @@ public class PersonaDAO {
 		
 	}
 	
-	public static Pesona getPersona(int idPersona) throws Exception{
+	public static Persona getPersona(int idPersona) throws Exception{
 		Connection co = Conexion.obtConexion();
 		String sql = "select *from personas where idperosnas = "+idPersona;
 		java.sql.Statement stm = co.createStatement();
 		ResultSet rels = stm.executeQuery(sql);
-		Pesona per = new Pesona();
+		Persona per = new Persona();
 		if (rels.next()) {
 			int idperosnas = rels.getInt("idperosnas");
 			int edad = rels.getInt("edad");
